@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel Table Booking Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Hotel Table Booking</h1>
+    <form onsubmit="submitForm(event)">      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="phone">Phone number:</label>
+      <input
+        type="text"
+        id="phone"
+        name="phonenumber"
+        required
+      /> <br><br>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required /><br /><br />
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required /><br /><br />
+
+      <label for="people">Number of People:</label>
+      <input
+        type="number"
+        id="people"
+        name="people"
+        min="1"
+        max="10"
+        required
+      />
+      <br /><br />
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+      <button type="submit">Book Now</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
